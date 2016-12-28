@@ -195,6 +195,136 @@ export default class Peaches extends Component {
           </View>
 
         </View>
+        <Image
+          source={{uri: 'https://media.giphy.com/media/7DEQSZy355qZa/giphy.gif'}}
+          resizeMode="cover"
+          style={{
+            width: 375,
+            marginTop: 20,
+            height: 150,
+          }}
+        >
+          <View
+            style={{
+              height: 150,
+              padding: 24
+            }}
+          >
+            <View
+              style={{
+                flexDirection: 'row',
+                backgroundColor: 'transparent'
+              }}
+            >
+              <Image
+                source={require('./img/profilepic.jpeg')}
+                style={{
+                  width: 50,
+                  height: 50,
+                  borderRadius: 3,
+                  marginRight: 10
+                }}
+              />
+              <View>
+                <Text
+                  style={{
+                    fontWeight: '500',
+                    fontSize: 15,
+                    color: 'white'
+                  }}
+                >
+                  {'Aaron Schubert'}
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 10,
+                    color: 'rgba(255, 255, 255, 0.75)'
+                  }}
+                >
+                  {'@aaron'}
+                </Text>
+              </View>
+            </View>
+            <Text
+              style={{
+                marginTop: 10,
+                fontSize: 15,
+                marginRight: 24,
+                backgroundColor: 'transparent',
+                color: 'white'
+              }}
+            >
+              {'So sad to hear, just finished Episode V & VI earlier! 😢 '}
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {'#RIPCarrieFisher'}
+              </Text>
+            </Text>
+          </View>
+
+        </Image>
+        <Image
+          source={require('./img/ht7.jpg')}
+          blurRadius={20}
+          resizeMode="cover"
+          style={{
+            width: 375,
+            marginTop: 20,
+            height: 150,
+            padding: 24
+          }}
+        >
+          <View
+            style={{
+              flexDirection: 'row',
+              backgroundColor: 'transparent'
+            }}
+          >
+            <Image
+              source={require('./img/profilepic.jpeg')}
+              style={{
+                width: 50,
+                height: 50,
+                borderRadius: 3,
+                marginRight: 10
+              }}
+            />
+            <View>
+              <Text
+                style={{
+                  fontWeight: '500',
+                  fontSize: 15,
+                  color: 'white'
+                }}
+              >
+                {'Aaron Schubert'}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 10,
+                  color: '#9B9B9B'
+                }}
+              >
+                {'@aaron'}
+              </Text>
+            </View>
+          </View>
+          <Text
+            style={{
+              marginTop: 10,
+              fontSize: 15,
+              marginRight: 24,
+              backgroundColor: 'transparent',
+              color: 'white'
+            }}
+          >
+            {'So sad to hear, just finished Episode V & VI earlier! 😢 '}
+            <Text
+              style={{ fontWeight: 'bold', color: 'black'}}>
+              {'#RIPCarrieFisher'}
+            </Text>
+          </Text>
+        </Image>
       </ScrollView>
     );
   }
