@@ -13,6 +13,8 @@ import {
   Image
 } from 'react-native';
 
+import SpinningRecord from './SpinningRecord'
+
 export default class Peaches extends Component {
   render() {
     return (
@@ -325,6 +327,231 @@ export default class Peaches extends Component {
             </Text>
           </Text>
         </Image>
+        <View
+          style={{
+            marginHorizontal: 12,
+            marginTop: 50,
+            marginBottom: 50,
+            overflow: 'hidden'
+          }}
+        >
+          <View
+            style={{
+              flexDirection: 'row',
+            }}
+          >
+            <Image
+              source={require('./img/profilepic.jpeg')}
+              style={{
+                width: 50,
+                height: 50,
+                borderRadius: 3,
+                marginRight: 10
+              }}
+            />
+            <View>
+              <Text
+                style={{
+                  fontWeight: '500',
+                  fontSize: 15
+                }}
+              >
+                {'Aaron Schubert'}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 10,
+                  color: '#9B9B9B'
+                }}
+              >
+                {'@aaron'}
+              </Text>
+            </View>
+          </View>
+          <Image
+            blurRadius={100}
+            source={require('./img/theSound.png')}
+            style={{
+              flexDirection: 'row',
+              borderRadius: 5,
+              marginTop: 10,
+              width: 351,
+              height: 100,
+            }}
+          >
+            <View
+              style={{
+                flexDirection: 'row'
+              }}
+            >
+              <View
+                style={{
+                  marginRight: 10
+                }}
+              >
+                <Image
+                  source={require('./img/theSound.png')}
+                  blurRadius={10}
+                  style={{
+                    width: 100,
+                    height: 100,
+                    borderTopLeftRadius: 5,
+                    borderBottomLeftRadius: 5,
+                    flexDirection: 'row'
+                  }}
+                >
+                  <SpinningRecord image={require('./img/theSound.png')}/>
+                  <View
+                    style={{
+                      backgroundColor: 'transparent',
+                      position: 'absolute',
+                      bottom: 5,
+                      right: 5
+                    }}
+                  >
+                    <Text style={{ color: '#FFC0CB', fontWeight: 'bold', fontSize: 6}}>{'The Sound'}</Text>
+                    <Text style={{ color: '#FFC0CB', fontSize: 6 }}>{'4:08'}</Text>
+                  </View>
+                </Image>
+              </View>
+            </View>
+            <Text
+              style={{
+                flex: 1,
+                marginTop: 10,
+                fontSize: 15,
+                backgroundColor: 'transparent',
+                color: 'white'
+              }}
+            >
+              {'This song by the 1975 is really awesome!'}
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {' #1975'}
+              </Text>
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {' #newAlbum'}
+              </Text>
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {' #cantStopListening'}
+              </Text>
+            </Text>
+          </Image>
+        </View>
+        <View
+          style={{
+            marginHorizontal: 12,
+            marginBottom: 50,
+            overflow: 'hidden'
+          }}
+        >
+          <View
+            style={{
+              flexDirection: 'row',
+            }}
+          >
+            <Image
+              source={require('./img/profilepic.jpeg')}
+              style={{
+                width: 50,
+                height: 50,
+                borderRadius: 3,
+                marginRight: 10
+              }}
+            />
+            <View>
+              <Text
+                style={{
+                  fontWeight: '500',
+                  fontSize: 15
+                }}
+              >
+                {'Aaron Schubert'}
+              </Text>
+              <Text
+                style={{
+                  fontSize: 10,
+                  color: '#9B9B9B'
+                }}
+              >
+                {'@aaron'}
+              </Text>
+            </View>
+          </View>
+          <Image
+            blurRadius={100}
+            source={require('./img/watchTheThrone.jpg')}
+            style={{
+              flexDirection: 'row',
+              borderRadius: 5,
+              marginTop: 10,
+              width: 351,
+              height: 100,
+            }}
+          >
+            <View
+              style={{
+                flexDirection: 'row'
+              }}
+            >
+              <View
+                style={{
+                  marginRight: 10
+                }}
+              >
+                <Image
+                  source={require('./img/watchTheThrone.jpg')}
+                  blurRadius={10}
+                  style={{
+                    width: 100,
+                    height: 100,
+                    borderTopLeftRadius: 5,
+                    borderBottomLeftRadius: 5,
+                    flexDirection: 'row'
+                  }}
+                >
+                  <SpinningRecord image={require('./img/watchTheThrone.jpg')}/>
+                  <View
+                    style={{
+                      backgroundColor: 'transparent',
+                      position: 'absolute',
+                      bottom: 5,
+                      right: 5
+                    }}
+                  >
+                    <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 6, textAlign: 'right'}}>{'No Church In The Wild'}</Text>
+                    <Text style={{ color: 'white', fontSize: 6, textAlign: 'right' }}>{'4:32'}</Text>
+                  </View>
+                </Image>
+              </View>
+            </View>
+            <Text
+              style={{
+                flex: 1,
+                marginTop: 10,
+                fontSize: 15,
+                backgroundColor: 'transparent',
+                color: 'white'
+              }}
+            >
+              {'Such a good intro to an awesome album'}
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {' #WTT'}
+              </Text>
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {' #Jay'}
+              </Text>
+              <Text
+                style={{ fontWeight: 'bold'}}>
+                {' #Kanye'}
+              </Text>
+            </Text>
+          </Image>
+        </View>
       </ScrollView>
     );
   }
