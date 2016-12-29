@@ -70,6 +70,7 @@ export default class MusicPost extends Component {
           </View>
         </View>
         <Text
+          numberOfLines={4}
           style={{
             flex: 1,
             fontSize: 15,
